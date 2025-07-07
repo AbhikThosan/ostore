@@ -1,0 +1,27 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "```\r ostore/\r ├── backend/\r │   ├── src/\r │   │   ├── config/\r │   │   │   └── db.js              # MongoDB connection\r │   │   ├── controllers/\r │   │   │   ├── productController.js # Product-related API logic\r │   │   │   └── orderController.js  # Order-related API logic\r │   │   ├── models/\r │   │   │   ├── Product.js         # Product schema\r │   │   │   └── Order.js           # Order schema\r │   │   ├── routes/\r │   │   │   ├── productRoutes.js   # Product API routes\r │   │   │   └── orderRoutes.js     # Order API routes\r │   │   ├── middleware/\r │   │   │   ├── errorHandler.js    # Global error handling\r │   │   │   └── validate.js        # Input validation middleware\r │   │   ├── utils/\r │   │   │   └── logger.js          # Logging configuration\r │   │   └── app.js                 # Express app setup\r │   ├── .env                       # Environment variables\r │   ├── .gitignore                 # Git ignore file\r │   ├── package.json               # Project dependencies\r │   └── README.md                  # Project documentation\r ├── frontend/\r │   └── (Coming soon...)\r ├── README.md\r └── .gitignore\r ```",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.0.1",
+    "express": "^5.1.0",
+    "express-rate-limit": "^7.5.1",
+    "express-validator": "^7.2.1",
+    "helmet": "^8.1.0",
+    "mongoose": "^8.16.2",
+    "morgan": "^1.10.0",
+    "uuid": "^11.1.0",
+    "winston": "^3.17.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
