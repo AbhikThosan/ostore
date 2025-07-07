@@ -1,10 +1,12 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "description": "```\r ostore/\r ├── backend/\r │   ├── src/\r │   │   ├── config/\r │   │   │   └── db.js              # MongoDB connection\r │   │   ├── controllers/\r │   │   │   ├── productController.js # Product-related API logic\r │   │   │   └── orderController.js  # Order-related API logic\r │   │   ├── models/\r │   │   │   ├── Product.js         # Product schema\r │   │   │   └── Order.js           # Order schema\r │   │   ├── routes/\r │   │   │   ├── productRoutes.js   # Product API routes\r │   │   │   └── orderRoutes.js     # Order API routes\r │   │   ├── middleware/\r │   │   │   ├── errorHandler.js    # Global error handling\r │   │   │   └── validate.js        # Input validation middleware\r │   │   ├── utils/\r │   │   │   └── logger.js          # Logging configuration\r │   │   └── app.js                 # Express app setup\r │   ├── .env                       # Environment variables\r │   ├── .gitignore                 # Git ignore file\r │   ├── package.json               # Project dependencies\r │   └── README.md                  # Project documentation\r ├── frontend/\r │   └── (Coming soon...)\r ├── README.md\r └── .gitignore\r ```",
-  "main": "index.js",
+  "description": "",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
+    "seed": "node seed.js"
   },
   "keywords": [],
   "author": "",
