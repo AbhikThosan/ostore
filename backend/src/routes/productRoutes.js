@@ -14,12 +14,12 @@ router.get(
   productController.getProducts
 );
 
+router.get("/categories", productController.getCategories);
+
 router.get(
   "/:id",
   [check("id").notEmpty().trim().escape()],
   productController.getProductById
 );
-
-router.get("/categories", productController.getCategories);
 
 module.exports = router;
